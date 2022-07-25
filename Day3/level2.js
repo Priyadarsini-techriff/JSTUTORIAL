@@ -73,16 +73,16 @@ if (myAge > yourAge) {
 
  var d = new Date();
  var n = d.getFullYear();
-// var year_born = prompt("Please enter your date of birth:", "Type here");
-// if (year_born >=2005 ){
-//     var age = n - year_born;
-//     alert("Hello, " + "you are " + age + " years old!" + "You are old enough to drive");
-// }
+var year_born = prompt("Please enter your date of birth:", "Type here");
+if (year_born >=2005 ){
+    var age = n - year_born;
+    alert("Hello, " + "you are " + age + " years old!" + "You are old enough to drive");
+}
 
-// else{
-//     var age1 = n - year_born;
-//     alert("Hello, " + "you are " + age1 + " years old!" + " You will be allowed to drive after 3 years.");
-// }
+else{
+    var age1 = n - year_born;
+    alert("Hello, " + "you are " + age1 + " years old!" + " You will be allowed to drive after 3 years.");
+}
 
 
 var year = prompt("Enter number of years you live:", "Type here");
@@ -106,8 +106,12 @@ console.log(`${Date}/${Month}/${Year} ${Hour}:${Minute}`)//DD/MM/YYYY HH:mm
 
 
 var date10 = new Date("3 march 2015 06:21:44");
+const year2 =date10.getFullYear();
+const month2 = date10.getMonth() + 1 ;
+const date2 = date10.getDate();  
 const hours2 = ("0" + (date10.getHours())).slice(-2); 
-
+const minute2=("0"+ (date10.getMinutes())).slice(-2);
+console.log(`${year2}-${month2}-${date2} ${hours2}:${minute2}`);
 
 
 
