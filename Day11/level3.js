@@ -23,8 +23,8 @@ let countries = [{
   languages: ["french"]
 }
 ]
-// let [name, capital, population, languages] = countries;
-// console.log(name, capital, population, languages);
+let [name, capital, population, languages] = countries;
+console.log(name, capital, population, languages);
 //2
 
 const Student = ['David', ['HTML', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
