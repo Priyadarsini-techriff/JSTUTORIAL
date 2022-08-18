@@ -61,18 +61,35 @@
 // console.log(titles)
 //adding style
 //Adding Style Background Color,font size,color
-const titles = document.querySelectorAll('h1')
-titles.forEach((title, i) => {
-  title.style.fontSize = '24px' // all titles will have 24px font size
-  if (i % 2 === 0) {
-    title.style.color = 'green'
-    title.style.backgroundColor="red"
-  } else {
-    title.style.color = 'red'
-    title.style.backgroundColor="green"
-  }
-})
-console.log(titles)
+// const titles = document.querySelectorAll('h1')
+// titles.forEach((title, i) => {
+//   title.style.fontSize = '24px' // all titles will have 24px font size
+//   if (i % 2 === 0) {
+//     title.style.color = 'green'
+//     title.style.backgroundColor="red"
+//   } else {
+//     title.style.color = 'red'
+//     title.style.backgroundColor="green"
+//   }
+// })
+// console.log(titles)
+
+// let title = document.createElement('h2')
+// title.className = 'title'
+// title.style.fontSize = '24px'
+// title.textContent = 'Creating HTML element DOM Day 2'
+
+// console.log(title)
+// let title
+// for (let i = 0; i < 3; i++) {
+//     title = document.createElement('h1')
+//     title.className = 'title'
+//     title.style.fontSize = '24px'
+//     title.textContent = i
+//     console.log(title)
+// }
+
+
 
 
 
