@@ -73,10 +73,10 @@ exp: {skill: 'Express', level: 9},
 sql: {skill: 'SQL', level: 8}, 
 ds : 'SQL'
 } 
+const copiedStudent = { ...s };
+copiedStudent.skills.frontEnd.push({ skill: "Bootstrap", level: 8 });
+copiedStudent.skills.backEnd.push({ skill: "Express", level: 9 });
+copiedStudent.skills.dataBase.push({ skill: "SQL", level: 8 });
+copiedStudent.skills.dataScience.push("SQL");
+console.log(copiedStudent);
 
-let copiedStudent = {...s};
-for(let i=0; i<skillz.length; i++){
-   copiedStudent.skills[i].push(skillz[i]);
-}
-
-console.log(copiedStudent)
