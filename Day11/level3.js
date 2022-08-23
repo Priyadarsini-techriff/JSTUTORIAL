@@ -67,12 +67,7 @@ const s = {
   }
 }
 
-let skillz = {
-bts: {skill: 'Bootstrap', level: 8}, 
-exp: {skill: 'Express', level: 9}, 
-sql: {skill: 'SQL', level: 8}, 
-ds : 'SQL'
-} 
+
 const copiedStudent = { ...s };
 copiedStudent.skills.frontEnd.push({ skill: "Bootstrap", level: 8 });
 copiedStudent.skills.backEnd.push({ skill: "Express", level: 9 });
