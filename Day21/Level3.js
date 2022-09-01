@@ -17,7 +17,8 @@ setInterval(() => {
     yearText.style.color = generateColor();
 }, 1000)
 //2
-
+let str;
+let dates = document.querySelector('p');
 let getDate = () => {
     let d = new Date();
 
@@ -28,24 +29,26 @@ let getDate = () => {
     let date = d.getDate();
     let hour = d.getHours();
     let mins = d.getMinutes();
+    let secs=d.getSeconds();
 
     date = date < 10 ? '0' + date.toString() : date;
     hour = hour < 10 ? '0' + hour.toString() : hour;
     mins = mins < 10 ? '0' + mins.toString() : mins;
 
-    return `${months[monthIndex]} ${date}, ${year}  ${hour}:${mins}`;
+    str= `${months[monthIndex]} ${date}, ${year}  ${hour}:${mins}:${secs}`;
+    dates.textContent=str;
 }  
-let date = document.querySelector('p');
-date.textContent = getDate();
 
-date.style.margin = 'auto';
-date.style.padding = '6px'
-date.style.textAlign = 'center';
-date.style.fontSize = '12px';
-date.style.fontWeight = '400';
-date.style.width = '40%';
+setInterval(getDate,1000)
+
+dates.style.margin = 'auto';
+dates.style.padding = '6px'
+dates.style.textAlign = 'center';
+dates.style.fontSize = '12px';
+dates.style.fontWeight = '400';
+dates.style.width = '40%';
 setInterval(() => {
-    date.style.backgroundColor = generateColor();
+    dates.style.backgroundColor = generateColor();
   }, 1000);
 //3,4,5
 let listItems = document.querySelectorAll('li');
